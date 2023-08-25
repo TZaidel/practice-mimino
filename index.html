@@ -18,24 +18,38 @@
     <title>Mimino</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container header-container">
         <nav class="nav">
           <a href="" class="logo">MIMIHO</a>
+
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="" class="nav-link">Ресторан</a>
-              <!-- <svg class="nav-tel-icon" width="12" heiht="20">
-                <use href="./img/icons.svg#icon-phone"></use>
-            </svg> -->
-              <a href="tel+380955559533" class="nav-tel">095 555 95 33</a>
+              <a href="" class="menu-link">Ресторан</a>
+              <button type="button" class="nav-btn">
+                <svg class="nav-tel-icon" width="18" height="20">
+                  <use href="./img/icons.svg#icon-phone"></use>
+                </svg>
+                <a href="tel+380955559533" class="nav-tel-link"
+                  >095 555 95 33</a
+                >
+              </button>
             </li>
+
             <li class="nav-item">
-              <a href="" class="nav-link">Готель</a
-              ><a href="tel+380668491089" class="nav-tel">066 849 10 89</a>
+              <a href="" class="menu-link">Готель</a>
+              <button type="button" class="nav-btn">
+                <svg class="nav-tel-icon" width="18" height="20">
+                  <use href="./img/icons.svg#icon-phone"></use>
+                </svg>
+                <a href="tel+380668491089" class="nav-tel-link"
+                  >066 849 10 89</a
+                >
+              </button>
             </li>
           </ul>
         </nav>
+
         <ul class="header-icon-list">
           <li class="header-icon-item">
             <a href="" class="header-icon-link">
@@ -70,10 +84,15 @@
           <p class="title-second-desc">СМАК ЖИТТЯ 24/7</p>
           <div class="address-btn-wrap">
             <address class="address">
-              <a href="https://www.google.com/maps" class="address-link"
-                >Україна, м. Полтава, <br />
-                вул. Маршала Бірюзова, 15</a
-              >
+              <button class="address-btn">
+                <svg class="address-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-map"></use>
+                </svg>
+                <a href="https://www.google.com/maps" class="address-link"
+                  >Україна, м. Полтава, <br />
+                  вул. Маршала Бірюзова, 15</a
+                >
+              </button>
             </address>
 
             <div class="hero-btn-wrap">
@@ -88,9 +107,9 @@
         </div>
       </section>
 
-      <!-- ABOUT -->
-      <section class="section about-section">
-        <div class="container about-container">
+      <!-- /* --------------ABOUT RESTAURANT-------------- */ -->
+      <section class="section about-rest-section">
+        <div class="container about-rest-container">
           <div class="about-rest-desc-img-wrap">
             <div class="about-rest-desc-wrap">
               <p class="pre-title about-rest-pre-title">
@@ -116,36 +135,253 @@
             </p>
           </div>
           <ul class="about-rest-img-wrap">
-            <li><img src="./img/hp-rest-3.jpg" alt=""></li>
-            <li><img src="./img/hp-rest-4.jpg" alt=""></li>
+            <li>
+              <img src="./img/hp-rest-3.jpg" alt="" width="254" height="254" />
+            </li>
+            <li>
+              <img src="./img/hp-rest-4.jpg" alt="" width="254" height="254" />
+            </li>
+          </ul>
+
+          <ul class="about-rest-btn-lr-list">
+            <li class="black-btn-lr-item">
+              <svg class="btn-lr-icon" width="32" height="32">
+                <use href="./img/icons.svg#icon-btn-left"></use>
+              </svg>
+            </li>
+            <li class="black-btn-lr-item">
+              <svg class="btn-lr-icon" width="32" height="32">
+                <use href="./img/icons.svg#icon-btn-right"></use>
+              </svg>
+            </li>
           </ul>
         </div>
       </section>
 
-      <!-- RESTAURANT -->
+      <!-- /* --------------RESTAURANT-------------- */ -->
       <section class="section restaurant-section">
         <div class="container restaurant-container">
-          <h2 class="title restaurant-title">MIMIHO</h2>
-          <p class="restaurant-second-title">Ресторан</p>
-          <p class="text restaurant-text">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit.
-          </p>
-
-          <div class="restaurant-btn-wrap">
-            <button type="button" class="btn">Забронювати столик</button>
-            <button type="button" class="btn">Переглянути меню</button>
+          <div class="restaurant-wrap">
+            <div class="restaurant-left-side">
+              <button type="button" class="btn btn-restaurant">
+                Забронювати столик
+              </button>
+              <button type="button" class="btn btn-restaurant">
+                Переглянути меню
+              </button>
+            </div>
+            <div class="restaurant-right-side">
+              <h2 class="title restaurant-title">MIMIHO</h2>
+              <p class="second-title">Ресторан</p>
+              <p class="text restaurant-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+              <div class="restaurant-img-wrap">
+                <img src="./img/hp-meal-1.jpg" alt="" />
+                <img src="./img/hp-meal-2.jpg" alt="" />
+                <img src="./img/hp-meal-3.jpg" alt="" />
+              </div>
+            </div>
           </div>
 
-          <div class="restaurant-img-wrap">
-            <img src="./img/hp-meal-1.jpg" alt="" />
-            <img src="./img/hp-meal-2.jpg" alt="" />
-            <img src="./img/hp-meal-3.jpg" alt="" />
+          <ul class="restaurant-btn-lr-list">
+            <li class="btn-lr-item">
+              <svg class="btn-lr-icon" width="32" height="32">
+                <use href="./img/icons.svg#icon-btn-left"></use>
+              </svg>
+            </li>
+            <li class="btn-lr-item">
+              <svg class="btn-lr-icon" width="32" height="32">
+                <use href="./img/icons.svg#icon-btn-right"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- /* --------------ABOUT HOTEL-------------- */ -->
+
+      <section class="section about-hotel-section">
+        <div class="container about-hotel-container">
+          <div class="about-hotel-wrap-1">
+            <img src="./img/hp-hotel-1.jpg" alt="" class="about-hotel-img-1" />
+
+            <div class="about-hotel-desc-wrap">
+              <p class="pre-title about-hotel-pre-title">
+                Amet minim mollit non
+              </p>
+              <h2 class="title about-hotel-title">MIMIHO</h2>
+              <p class="text about-hotel-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-hotel-wrap-2">
+            <p class="text about-hotel-text-2">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <img src="./img/hp-hotel-2.jpg" alt="" class="about-hotel-img-2" />
+          </div>
+
+          <div class="about-hotel-wrap-3">
+            <img src="./img/hp-hotel-3.jpg" alt="" class="about-hotel-img-3" />
+            <img src="./img/hp-hotel-4.jpg" alt="" class="about-hotel-img-4" />
+          </div>
+
+          <ul class="about-hotel-btn-lr-list">
+            <li class="black-btn-lr-item">
+              <svg class="btn-lr-icon" width="32" height="32">
+                <use href="./img/icons.svg#icon-btn-left"></use>
+              </svg>
+            </li>
+            <li class="black-btn-lr-item">
+              <svg class="btn-lr-icon" width="32" height="32">
+                <use href="./img/icons.svg#icon-btn-right"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- /* -------------- HOTEL-------------- */ -->
+      <section class="section hotel-section">
+        <div class="container hotel-container">
+          <div class="hotel-wrap">
+            <div class="hotel-desc-wrap">
+              <h2 class="title hotel-title">MIMIHO</h2>
+              <h3 class="second-title">Готель</h3>
+              <p class="text hotel-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+              <div class="hotel-img-wrap">
+                <img src="./img/hp-hot-1.jpg" alt="" class="hotel-img-1" />
+                <img src="./img/hp-hot-2.jpg" alt="" class="hotel-img-2" />
+                <img src="./img/hp-hot-3.jpg" alt="" class="hotel-img-3" />
+              </div>
+
+              <ul class="hotel-btn-lr-list">
+                <li class="btn-lr-item">
+                  <svg class="btn-lr-icon" width="32" height="32">
+                    <use href="./img/icons.svg#icon-btn-left"></use>
+                  </svg>
+                </li>
+                <li class="btn-lr-item">
+                  <svg class="btn-lr-icon" width="32" height="32">
+                    <use href="./img/icons.svg#icon-btn-right"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+            <div class="hotel-btn-wrap">
+              <button type="button" class="btn btn-hotel">
+                Забронювати номер
+              </button>
+              <button type="button" class="btn btn-hotel">
+                Переглянути ціни
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-info">
+        <div class="container info-container">
+          <div class="info-wrap">
+            <div class="info-text-wrap">
+              <h2 class="title info-title">MIMIHO</h2>
+              <p class="info-second-title">Ресторанно-готельний комплекс</p>
+              <ul class="info-phone-list">
+                <li class="info-phone-item">
+                  <h3 class="info-phone-title">Ресторан</h3>
+                  <button class="info-phone-btn">
+                    <a href="tel:+380955559533" class="info-phone-link"
+                      >095 555 95 33</a
+                    >
+                  </button>
+                </li>
+                <li class="info-phone-item">
+                  <h3 class="info-phone-title">Готель</h3>
+                  <button class="info-phone-btn">
+                    <a href="tel:+380668491089" class="info-phone-link"
+                      >066 849 10 89</a
+                    >
+                  </button>
+                </li>
+              </ul>
+              <address class="info-address">
+                <a
+                  href="https://www.google.com/maps"
+                  target="_blank"
+                  class="info-address-link"
+                  >Україна, м. Полтава, <br />
+                  вул. Маршала Бірюзова, 15</a
+                >
+              </address>
+            </div>
+            <img
+              src="./img/map.jpg"
+              alt=""
+              class="info-map"
+              width="634"
+              height="412"
+              class="info-map"
+            />
           </div>
         </div>
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <section class="section footer-section">
+        <div class="container footer-container">
+          <h2 class="footer-logo title">MIMIHO</h2>
+          <ul class="footer-menu-list">
+            <li class="footer-menu-item">
+              <a href="" class="menu-link">Головна</a>
+            </li>
+            <li class="footer-menu-item">
+              <a href="" class="menu-link">Ресторан</a>
+            </li>
+            <li class="footer-menu-item">
+              <a href="" class="menu-link">Готель</a>
+            </li>
+          </ul>
+
+          <ul class="footer-soc-list">
+            <li class="footer-soc-item">
+              <button class="footer-soc-btn">
+                <a href="" class="footer-soc-link">Telegram</a
+                ><svg class="footer-soc-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-telegram"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="footer-soc-item">
+              <button class="footer-soc-btn">
+                <a href="" class="footer-soc-link">Facebook</a>
+                <svg class="footer-soc-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-facebook"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="footer-soc-item">
+              <button class="footer-soc-btn">
+                <a href="" class="footer-soc-link">Instagram</a>
+                <svg class="footer-soc-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-instagram"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
