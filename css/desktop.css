@@ -1,0 +1,108 @@
+@media screen and (min-width: 1280px) {
+  /* ------------------------------------------- */
+
+  .container {
+    max-width: 1140px;
+  }
+
+  /* --------------HERO-------------- */
+
+  /* --------------ABOUT RESTAURANT-------------- */
+
+  .about-rest-text {
+    max-width: 460px;
+    margin-right: 100px;
+  }
+
+  .about-rest-2-img {
+    margin-top: -65px;
+  }
+
+  .about-text-second {
+    max-width: 312px;
+    margin-left: 100px;
+    margin-top: 121px;
+  }
+
+  .about-rest-img-wrap {
+    gap: 40px;
+    margin-top: -150px;
+  }
+
+  /* --------------RESTAURANT-------------- */
+  .restaurant-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../img/hp-bg-restaurant.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .box {
+      background-image: url(../img/hp-bg-restaurant-2x.jpg);
+    }
+  }
+
+  /* --------------ABOUT HOTEL-------------- */
+
+  .about-hotel-section {
+    padding-bottom: 50px;
+  }
+  /* 1 */
+  .about-hotel-wrap-1 {
+    justify-content: flex-end;
+  }
+
+  .about-hotel-img-1 {
+    margin-top: -140px;
+    margin-right: 100px;
+  }
+
+  .about-hotel-text {
+    max-width: 460px;
+  }
+
+  /* 2 */
+  .about-hotel-text-2 {
+    margin-top: 125px;
+  }
+
+  .about-hotel-img-2 {
+    margin-top: -50px;
+  }
+
+  /* 3 */
+  .about-hotel-wrap-3 {
+    margin-top: -160px;
+  }
+
+  .about-hotel-btn-lr-list {
+    margin-top: 40px;
+  }
+
+  /* -------------- HOTEL-------------- */
+  .hotel-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../img/hp-bg-hotel.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1280px 720px;
+    background-color: #0e0c07;
+    margin: 0 auto;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .box {
+      background-image: url(../img/hp-bg-hotel-2x.jpg);
+    }
+  }
+
+  /* -------------- INFO-------------- */
+
+  /* -------------- FOOTER-------------- */
+}

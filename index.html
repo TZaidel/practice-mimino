@@ -15,39 +15,43 @@
     />
 
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
     <title>Mimino</title>
   </head>
   <body>
     <header class="header">
       <div class="container header-container">
         <nav class="nav">
-          <a href="" class="logo">MIMIHO</a>
+          <div><a href="" class="logo">MIMIHO</a></div>
 
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="" class="menu-link">Ресторан</a>
-              <button type="button" class="nav-btn">
-                <svg class="nav-tel-icon" width="18" height="20">
-                  <use href="./img/icons.svg#icon-phone"></use>
-                </svg>
-                <a href="tel+380955559533" class="nav-tel-link"
-                  >095 555 95 33</a
-                >
-              </button>
-            </li>
-
-            <li class="nav-item">
-              <a href="" class="menu-link">Готель</a>
-              <button type="button" class="nav-btn">
-                <svg class="nav-tel-icon" width="18" height="20">
-                  <use href="./img/icons.svg#icon-phone"></use>
-                </svg>
-                <a href="tel+380668491089" class="nav-tel-link"
-                  >066 849 10 89</a
-                >
-              </button>
-            </li>
-          </ul>
+          <div>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="" class="menu-link">Ресторан</a>
+                <button type="button" class="nav-btn">
+                  <svg class="nav-tel-icon" width="18" height="20">
+                    <use href="./img/icons.svg#icon-phone"></use>
+                  </svg>
+                  <a href="tel+380955559533" class="nav-tel-link"
+                    >095 555 95 33</a
+                  >
+                </button>
+              </li>
+              <li class="nav-item">
+                <a href="" class="menu-link">Готель</a>
+                <button type="button" class="nav-btn">
+                  <svg class="nav-tel-icon" width="18" height="20">
+                    <use href="./img/icons.svg#icon-phone"></use>
+                  </svg>
+                  <a href="tel+380668491089" class="nav-tel-link"
+                    >066 849 10 89</a
+                  >
+                </button>
+              </li>
+            </ul>
+          </div>
         </nav>
 
         <ul class="header-icon-list">
@@ -77,6 +81,7 @@
     </header>
 
     <main>
+      <!-- /* --------------HERO-------------- */ -->
       <section class="section hero-section">
         <div class="container hero-container">
           <h1 class="hero-title">MIMIHO</h1>
@@ -107,7 +112,7 @@
         </div>
       </section>
 
-      <!-- /* --------------ABOUT RESTAURANT-------------- */ -->
+      <!-- /* --------------ABOUT RESTAURANT  DONE-------------- */ -->
       <section class="section about-rest-section">
         <div class="container about-rest-container">
           <div class="about-rest-desc-img-wrap">
@@ -122,11 +127,56 @@
                 Exercitation veniam consequat sunt nostrud amet.
               </p>
             </div>
-            <img src="./img/hp-rest-1.jpg" alt="" class="about-rest-1-img" />
+
+            <picture>
+              <source
+                srcset="./img/hp-rest-1.jpg 1x, ./img/hp-rest-1-2x.jpg 2x"
+                media="(min-width: 1280px)" />
+              <source
+                srcset="
+                  ./img/hp-rest-1-tab.jpg    1x,
+                  ./img/hp-rest-1-tab-2x.jpg 2x
+                "
+                media="(min-width: 1024px)" />
+              <source
+                srcset="
+                  ./img/hp-rest-1-mob.jpg    1x,
+                  ./img/hp-rest-1-mob-2x.jpg 2x
+                " />
+              <img
+                src="./img/hp-rest-1.jpg"
+                max-width="460"
+                alt=""
+                class="about-rest-1-img"
+            /></picture>
           </div>
 
           <div class="about-rest-desc-img-wrap-second">
-            <img src="./img/hp-rest-2.jpg" alt="" class="about-rest-2-img" />
+            <picture>
+              <source
+                srcset="./img/hp-rest-2.jpg 1x, ./img/hp-rest-2-2x.jpg 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./img/hp-rest-2-tab.jpg    1x,
+                  ./img/hp-rest-2-tab-2x.jpg 2x
+                "
+                media="(min-width: 1024px)"
+              />
+              <source
+                srcset="
+                  ./img/hp-rest-2-mob.jpg    1x,
+                  ./img/hp-rest-2-mob-2x.jpg 2x
+                "
+              />
+              <img
+                src="./img/hp-rest-2.jpg"
+                max-width="460"
+                alt=""
+                class="about-rest-2-img"
+              />
+            </picture>
 
             <p class="text about-text-second">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -136,10 +186,48 @@
           </div>
           <ul class="about-rest-img-wrap">
             <li>
-              <img src="./img/hp-rest-3.jpg" alt="" width="254" height="254" />
+              <picture>
+                <source
+                  srcset="./img/hp-rest-3.jpg 1x, ./img/hp-rest-3-2x.jpg 2x"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./img/hp-rest-3-tab.jpg    1x,
+                    ./img/hp-rest-3-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 1024px)"
+                />
+                <source
+                  srcset="
+                    ./img/hp-rest-3-mob.jpg    1x,
+                    ./img/hp-rest-3-mob-2x.jpg 2x
+                  "
+                />
+                <img src="./img/hp-rest-3.jpg" alt="" max-width="254" />
+              </picture>
             </li>
             <li>
-              <img src="./img/hp-rest-4.jpg" alt="" width="254" height="254" />
+              <picture>
+                <source
+                  srcset="./img/hp-rest-4.jpg 1x, ./img/hp-rest-4-2x.jpg 2x"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./img/hp-rest-4-tab.jpg    1x,
+                    ./img/hp-rest-4-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 1024px)"
+                />
+                <source
+                  srcset="
+                    ./img/hp-rest-4-mob.jpg    1x,
+                    ./img/hp-rest-4-mob-2x.jpg 2x
+                  "
+                />
+                <img src="./img/hp-rest-4.jpg" alt="" max-width="254" />
+              </picture>
             </li>
           </ul>
 
@@ -158,7 +246,7 @@
         </div>
       </section>
 
-      <!-- /* --------------RESTAURANT-------------- */ -->
+      <!-- /* --------------RESTAURANT  DONE-------------- */ -->
       <section class="section restaurant-section">
         <div class="container restaurant-container">
           <div class="restaurant-wrap">
@@ -171,41 +259,117 @@
               </button>
             </div>
             <div class="restaurant-right-side">
-              <h2 class="title restaurant-title">MIMIHO</h2>
-              <p class="second-title">Ресторан</p>
-              <p class="text restaurant-text">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-              </p>
-              <div class="restaurant-img-wrap">
-                <img src="./img/hp-meal-1.jpg" alt="" />
-                <img src="./img/hp-meal-2.jpg" alt="" />
-                <img src="./img/hp-meal-3.jpg" alt="" />
+              <div class="restaurant-descr">
+                <h2 class="title restaurant-title">MIMIHO</h2>
+                <p class="second-title">Ресторан</p>
+                <p class="text restaurant-text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+              </div>
+              <div>
+                <div class="restaurant-img-wrap">
+                  <picture>
+                    <source
+                      srcset="./img/hp-meal-1.jpg 1x, ./img/hp-meal-1-2x.jpg 2x"
+                      media="(min-width: 1280px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/hp-meal-1-tab.jpg    1x,
+                        ./img/hp-meal-1-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 1024px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/hp-meal-1-mob.jpg    1x,
+                        ./img/hp-meal-1-mob-2x.jpg 2x
+                      "
+                    />
+                    <img src="./img/hp-meal-1.jpg" alt="" max-width="274" />
+                  </picture>
+
+                  <picture>
+                    <source
+                      srcset="./img/hp-meal-2.jpg 1x, ./img/hp-meal-2-2x.jpg 2x"
+                      media="(min-width: 1280px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/hp-meal-2-tab.jpg    1x,
+                        ./img/hp-meal-2-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 1024px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/hp-meal-2-mob.png    1x,
+                        ./img/hp-meal-2-mob-2x.png 2x
+                      "
+                    />
+                    <img src="./img/hp-meal-2.jpg" alt="" max-width="270" />
+                  </picture>
+
+                  <picture class="picture-no-display">
+                    <source
+                      srcset="./img/hp-meal-3.jpg 1x, ./img/hp-meal-3-2x.jpg 2x"
+                      media="(min-width: 1280px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/hp-meal-3-tab.jpg    1x,
+                        ./img/hp-meal-3-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 1024px)"
+                    />
+
+                    <img src="./img/hp-meal-3.jpg" alt="" max-width="270" />
+                  </picture>
+                </div>
+                <ul class="restaurant-btn-lr-list">
+                  <li class="btn-lr-item">
+                    <svg class="btn-lr-icon" width="32" height="32">
+                      <use href="./img/icons.svg#icon-btn-left"></use>
+                    </svg>
+                  </li>
+                  <li class="btn-lr-item">
+                    <svg class="btn-lr-icon" width="32" height="32">
+                      <use href="./img/icons.svg#icon-btn-right"></use>
+                    </svg>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-
-          <ul class="restaurant-btn-lr-list">
-            <li class="btn-lr-item">
-              <svg class="btn-lr-icon" width="32" height="32">
-                <use href="./img/icons.svg#icon-btn-left"></use>
-              </svg>
-            </li>
-            <li class="btn-lr-item">
-              <svg class="btn-lr-icon" width="32" height="32">
-                <use href="./img/icons.svg#icon-btn-right"></use>
-              </svg>
-            </li>
-          </ul>
         </div>
       </section>
 
-      <!-- /* --------------ABOUT HOTEL-------------- */ -->
-
+      <!-- /* --------------ABOUT HOTEL  DONE-------------- */ -->
       <section class="section about-hotel-section">
         <div class="container about-hotel-container">
           <div class="about-hotel-wrap-1">
-            <img src="./img/hp-hotel-1.jpg" alt="" class="about-hotel-img-1" />
+            <picture>
+              <source
+                srcset="./img/hp-hotel-1.jpg 1x, ./img/hp-hotel-1-2x.jpg 2x"
+                media="(min-width: 1280px)" />
+              <source
+                srcset="
+                  ./img/hp-hotel-1-tab.jpg    1x,
+                  ./img/hp-hotel-1-tab-2x.jpg 2x
+                "
+                media="(min-width: 1024px)" />
+              <source
+                srcset="
+                  ./img/hp-hotel-1-mob.jpg    1x,
+                  ./img/hp-hotel-1-mob-2x.jpg 2x
+                " />
+              <img
+                src="./img/hp-hotel-1.jpg"
+                alt=""
+                class="about-hotel-img-1"
+                max-width="460"
+            /></picture>
 
             <div class="about-hotel-desc-wrap">
               <p class="pre-title about-hotel-pre-title">
@@ -226,12 +390,73 @@
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
             </p>
-            <img src="./img/hp-hotel-2.jpg" alt="" class="about-hotel-img-2" />
+            <picture>
+              <source
+                srcset="./img/hp-hotel-2.jpg 1x, ./img/hp-hotel-2-2x.jpg 2x"
+                media="(min-width: 1280px)" />
+              <source
+                srcset="
+                  ./img/hp-hotel-2-tab.jpg    1x,
+                  ./img/hp-hotel-2-tab-2x.jpg 2x
+                "
+                media="(min-width: 1024px)" />
+              <source
+                srcset="
+                  ./img/hp-hotel-2-mob.jpg    1x,
+                  ./img/hp-hotel-2-mob-2x.jpg 2x
+                " />
+              <img
+                src="./img/hp-hotel-2.jpg"
+                alt=""
+                class="about-hotel-img-2"
+                max-width="460"
+            /></picture>
           </div>
 
           <div class="about-hotel-wrap-3">
-            <img src="./img/hp-hotel-3.jpg" alt="" class="about-hotel-img-3" />
-            <img src="./img/hp-hotel-4.jpg" alt="" class="about-hotel-img-4" />
+            <picture>
+              <source
+                srcset="./img/hp-hotel-3.jpg 1x, ./img/hp-hotel-3-2x.jpg 2x"
+                media="(min-width: 1280px)" />
+              <source
+                srcset="
+                  ./img/hp-hotel-3-tab.jpg    1x,
+                  ./img/hp-hotel-3-tab-2x.jpg 2x
+                "
+                media="(min-width: 1024px)" />
+              <source
+                srcset="
+                  ./img/hp-hotel-3-mob.jpg    1x,
+                  ./img/hp-hotel-3-mob-2x.jpg 2x
+                " />
+              <img
+                src="./img/hp-hotel-3.jpg"
+                alt=""
+                class="about-hotel-img-3"
+                max-width="254"
+            /></picture>
+
+            <picture>
+              <source
+                srcset="./img/hp-hotel-4.jpg 1x, ./img/hp-hotel-4-2x.jpg 2x"
+                media="(min-width: 1280px)" />
+              <source
+                srcset="
+                  ./img/hp-hotel-4-tab.jpg    1x,
+                  ./img/hp-hotel-4-tab-2x.jpg 2x
+                "
+                media="(min-width: 1024px)" />
+              <source
+                srcset="
+                  ./img/hp-hotel-4-mob.jpg    1x,
+                  ./img/hp-hotel-4-mob-2x.jpg 2x
+                " />
+              <img
+                src="./img/hp-hotel-4.jpg"
+                alt=""
+                class="about-hotel-img-4"
+                max-width="254"
+            /></picture>
           </div>
 
           <ul class="about-hotel-btn-lr-list">
@@ -249,21 +474,92 @@
         </div>
       </section>
 
-      <!-- /* -------------- HOTEL-------------- */ -->
+      <!-- /* -------------- HOTEL  DONE-------------- */ -->
       <section class="section hotel-section">
         <div class="container hotel-container">
           <div class="hotel-wrap">
-            <div class="hotel-desc-wrap">
-              <h2 class="title hotel-title">MIMIHO</h2>
-              <h3 class="second-title">Готель</h3>
-              <p class="text hotel-text">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-              </p>
+            <div class="hotel-desc-img-wrap">
+              <div class="hotel-desc-wrap">
+                <h2 class="title hotel-title">MIMIHO</h2>
+                <h3 class="second-title">Готель</h3>
+                <p class="text hotel-text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+              </div>
               <div class="hotel-img-wrap">
-                <img src="./img/hp-hot-1.jpg" alt="" class="hotel-img-1" />
-                <img src="./img/hp-hot-2.jpg" alt="" class="hotel-img-2" />
-                <img src="./img/hp-hot-3.jpg" alt="" class="hotel-img-3" />
+                <picture>
+                  <source
+                    srcset="./img/hp-hot-1.jpg 1x, ./img/hp-hot-1-2x.jpg 2x"
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/hp-hot-1-tab.jpg    1x,
+                      ./img/hp-hot-1-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 1024px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/hp-hot-1-mob.jpg    1x,
+                      ./img/hp-hot-1-mob-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./img/hp-hot-1.jpg"
+                    alt=""
+                    class="hotel-img-1"
+                    max-width="274"
+                  />
+                </picture>
+
+                <picture>
+                  <source
+                    srcset="./img/hp-hot-2.jpg 1x, ./img/hp-hot-2-2x.jpg 2x"
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/hp-hot-2-tab.jpg    1x,
+                      ./img/hp-hot-2-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 1024px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/hp-hot-2-mob.jpg    1x,
+                      ./img/hp-hot-2-mob-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./img/hp-hot-2.jpg"
+                    alt=""
+                    class="hotel-img-2"
+                    max-width="162"
+                  />
+                </picture>
+
+                <picture class="picture-no-display">
+                  <source
+                    srcset="./img/hp-hot-3.jpg 1x, ./img/hp-hot-3-2x.jpg 2x"
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/hp-hot-3-tab.jpg    1x,
+                      ./img/hp-hot-3-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 1024px)"
+                  />
+
+                  <img
+                    src="./img/hp-hot-3.jpg"
+                    alt=""
+                    class="hotel-img-3"
+                    max-width="274"
+                  />
+                </picture>
               </div>
 
               <ul class="hotel-btn-lr-list">
@@ -291,7 +587,8 @@
         </div>
       </section>
 
-      <section class="section section-info">
+      <!-- /* --------------INFO-------------- */ -->
+      <!-- <section class="section section-info">
         <div class="container info-container">
           <div class="info-wrap">
             <div class="info-text-wrap">
@@ -335,11 +632,11 @@
             />
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <footer>
-      <section class="section footer-section">
+      <!-- <section class="section footer-section">
         <div class="container footer-container">
           <h2 class="footer-logo title">MIMIHO</h2>
           <ul class="footer-menu-list">
@@ -381,7 +678,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </footer>
   </body>
 </html>

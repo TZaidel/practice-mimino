@@ -1,0 +1,270 @@
+@media screen and (min-width: 1024px) {
+  /* ------------------------------------------- */
+
+  .container {
+    max-width: 960px;
+  }
+
+  .pre-title {
+    font-size: 32px;
+    margin-bottom: 4px;
+  }
+
+  .title {
+    font-size: 64px;
+    letter-spacing: 19.2px;
+    margin-bottom: 24px;
+  }
+
+  .text {
+    font-size: 16px;
+    letter-spacing: 0.32px;
+  }
+
+  /* HEADER */
+
+  .logo {
+    font-size: 40px;
+    letter-spacing: 12px;
+    margin-right: 135px;
+  }
+
+  .nav-btn {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    border-radius: 2px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    background-color: transparent;
+  }
+
+  .header-icon-list {
+    display: flex;
+    gap: 20px;
+    margin-right: 0;
+  }
+
+  .hero-btn-wrap {
+    gap: 60px;
+  }
+
+  .address-btn {
+    display: flex;
+    padding: 8px 8px 8px 10px;
+    border-radius: 2px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    background-color: transparent;
+
+    max-width: 285px;
+  }
+
+  /* --------------HERO-------------- */
+
+  /* --------------ABOUT RESTAURANT-------------- */
+
+  .about-rest-section {
+    padding-top: 120px;
+    padding-bottom: 32px;
+  }
+
+  .about-rest-desc-img-wrap {
+    flex-direction: row;
+    margin-bottom: 0px;
+  }
+
+  .about-rest-text {
+    max-width: 439px;
+    margin-right: 26px;
+  }
+
+  .about-rest-1-img {
+    margin-top: -140px;
+  }
+
+  .about-rest-2-img {
+    margin-top: -20px;
+  }
+
+  .about-text-second {
+    max-width: 312px;
+    margin-left: 115px;
+    margin-top: 180px;
+  }
+
+  .about-rest-img-wrap {
+    gap: 40px;
+    margin-top: -20px;
+  }
+
+  .about-rest-btn-lr-list {
+    margin-top: 32px;
+  }
+
+  /* --------------RESTAURANT-------------- */
+
+  .restaurant-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../img/hp-bg-restaurant-tab.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 48px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .box {
+      background-image: url(../img/hp-bg-restaurant-tab-2x.jpg);
+    }
+  }
+
+  .restaurant-wrap {
+    flex-direction: row;
+  }
+
+  .restaurant-descr {
+    max-width: 610px;
+    margin-left: 0;
+  }
+
+  .restaurant-title {
+    margin-bottom: 16px;
+  }
+
+  .restaurant-text {
+    margin-bottom: 40px;
+  }
+
+  .restaurant-img-wrap {
+    gap: 34px;
+    margin-bottom: 24px;
+  }
+
+  .picture-no-display {
+    display: block;
+  }
+
+  .restaurant-btn-lr-list {
+    margin-bottom: 0;
+  }
+
+  .restaurant-left-side {
+    margin-bottom: 54px;
+    margin-right: 29px;
+  }
+
+  /* --------------ABOUT HOTEL-------------- */
+
+  .about-hotel-section {
+    padding-top: 120px;
+    padding-bottom: 32px;
+  }
+  /* 1 */
+  .about-hotel-wrap-1 {
+    flex-direction: row;
+    margin-left: 88px;
+    margin-bottom: 0;
+  }
+
+  .about-hotel-img-1 {
+    margin-top: -140px; /*-20*/
+    margin-right: 100px;
+  }
+
+  .about-hotel-text {
+    max-width: 420px;
+    margin-bottom: 28px;
+  }
+
+  /* 2 */
+  .about-hotel-wrap-2 {
+    display: flex;
+    justify-content: flex-end;
+    gap: 100px;
+    margin-bottom: 0;
+  }
+
+  .about-hotel-text-2 {
+    max-width: 311px;
+    margin-top: 172px;
+    margin-right: 0;
+  }
+
+  .about-hotel-img-2 {
+    margin-top: -30px;
+  }
+
+  /* 3 */
+  .about-hotel-wrap-3 {
+    flex-direction: row;
+    justify-content: start;
+    gap: 40px;
+    margin-top: -40px;
+  }
+
+  .about-hotel-btn-lr-list {
+    margin-top: 32px;
+  }
+
+  /* -------------- HOTEL-------------- */
+
+  .hotel-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../img/hp-bg-hotel-tab.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #0e0c07;
+    margin: 0 auto;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .box {
+      background-image: url(../img/hp-bg-hotel-tab-2x.jpg);
+    }
+  }
+
+  .hotel-container {
+    padding-top: 48px;
+  }
+
+  .hotel-title {
+    margin-bottom: 16px;
+  }
+
+  .hotel-desc-wrap > .second-title {
+    margin-bottom: 8px;
+  }
+
+  .hotel-wrap {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .hotel-desc-wrap {
+    max-width: 549px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .hotel-desc-img-wrap {
+    align-items: flex-end;
+  }
+
+  .hotel-img-wrap {
+    gap: 34px;
+    margin-bottom: 24px;
+  }
+
+  .hotel-btn-wrap {
+    margin-bottom: 60px;
+  }
+
+  /* -------------- INFO-------------- */
+
+  /* -------------- FOOTER-------------- */
+}
