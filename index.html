@@ -23,35 +23,33 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <nav class="nav">
-          <div><a href="" class="logo">MIMIHO</a></div>
+        <a href="" class="logo">MIMIHO</a>
 
-          <div>
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a href="" class="menu-link">Ресторан</a>
-                <button type="button" class="nav-btn">
-                  <svg class="nav-tel-icon" width="18" height="20">
-                    <use href="./img/icons.svg#icon-phone"></use>
-                  </svg>
-                  <a href="tel+380955559533" class="nav-tel-link"
-                    >095 555 95 33</a
-                  >
-                </button>
-              </li>
-              <li class="nav-item">
-                <a href="" class="menu-link">Готель</a>
-                <button type="button" class="nav-btn">
-                  <svg class="nav-tel-icon" width="18" height="20">
-                    <use href="./img/icons.svg#icon-phone"></use>
-                  </svg>
-                  <a href="tel+380668491089" class="nav-tel-link"
-                    >066 849 10 89</a
-                  >
-                </button>
-              </li>
-            </ul>
-          </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="" class="menu-link">Ресторан</a>
+              <div class="nav-btn">
+                <svg class="nav-tel-icon" width="18" height="20">
+                  <use href="./img/icons.svg#icon-phone"></use>
+                </svg>
+                <a href="tel+380955559533" class="nav-tel-link"
+                  >095 555 95 33</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="" class="menu-link">Готель</a>
+              <div class="nav-btn">
+                <svg class="nav-tel-icon" width="18" height="20">
+                  <use href="./img/icons.svg#icon-phone"></use>
+                </svg>
+                <a href="tel+380668491089" class="nav-tel-link"
+                  >066 849 10 89</a
+                >
+              </div>
+            </li>
+          </ul>
         </nav>
 
         <ul class="header-icon-list">
@@ -112,7 +110,7 @@
         </div>
       </section>
 
-      <!-- /* --------------ABOUT RESTAURANT  DONE-------------- */ -->
+      <!-- /* --------------ABOUT RESTAURANT-------------- */ -->
       <section class="section about-rest-section">
         <div class="container about-rest-container">
           <div class="about-rest-desc-img-wrap">
@@ -246,7 +244,7 @@
         </div>
       </section>
 
-      <!-- /* --------------RESTAURANT  DONE-------------- */ -->
+      <!-- /* --------------RESTAURANT-------------- */ -->
       <section class="section restaurant-section">
         <div class="container restaurant-container">
           <div class="restaurant-wrap">
@@ -345,7 +343,7 @@
         </div>
       </section>
 
-      <!-- /* --------------ABOUT HOTEL  DONE-------------- */ -->
+      <!-- /* --------------ABOUT HOTEL-------------- */ -->
       <section class="section about-hotel-section">
         <div class="container about-hotel-container">
           <div class="about-hotel-wrap-1">
@@ -474,7 +472,7 @@
         </div>
       </section>
 
-      <!-- /* -------------- HOTEL  DONE-------------- */ -->
+      <!-- /* -------------- HOTEL-------------- */ -->
       <section class="section hotel-section">
         <div class="container hotel-container">
           <div class="hotel-wrap">
@@ -588,7 +586,7 @@
       </section>
 
       <!-- /* --------------INFO-------------- */ -->
-      <!-- <section class="section section-info">
+      <section class="section section-info">
         <div class="container info-container">
           <div class="info-wrap">
             <div class="info-text-wrap">
@@ -622,63 +620,92 @@
                 >
               </address>
             </div>
-            <img
-              src="./img/map.jpg"
-              alt=""
-              class="info-map"
-              width="634"
-              height="412"
-              class="info-map"
-            />
+            <picture>
+              <source
+                srcset="./img/map.png 1x, ./img/map-2x.png 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="./img/map-tab.png 1x, ./img/map-tab-2x.png 2x"
+                media="(min-width: 1024px)"
+              />
+              <source srcset="./img/map-mob.png 1x, ./img/map-mob-2x.png 2x" />
+              <img
+                src="./img/map.png"
+                alt=""
+                class="info-map"
+                width="634"
+                class="info-map"
+              />
+            </picture>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <footer>
-      <!-- <section class="section footer-section">
+      <section class="section footer-section">
         <div class="container footer-container">
           <h2 class="footer-logo title">MIMIHO</h2>
-          <ul class="footer-menu-list">
-            <li class="footer-menu-item">
-              <a href="" class="menu-link">Головна</a>
-            </li>
-            <li class="footer-menu-item">
-              <a href="" class="menu-link">Ресторан</a>
-            </li>
-            <li class="footer-menu-item">
-              <a href="" class="menu-link">Готель</a>
-            </li>
-          </ul>
+          <div class="footer-part">
+            <ul class="footer-menu-list">
+              <li class="footer-menu-item">
+                <a href="" class="menu-link footer-menu-link">Головна</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="" class="menu-link footer-menu-link">Ресторан</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="" class="menu-link footer-menu-link">Готель</a>
+              </li>
+            </ul>
+            <ul class="footer-soc-list">
+              <li class="footer-soc-item">
+                <button class="footer-soc-btn">
+                  <a href="" class="footer-soc-link">Telegram</a
+                  ><svg class="footer-soc-icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-telegram"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="footer-soc-item">
+                <button class="footer-soc-btn">
+                  <a href="" class="footer-soc-link">Facebook</a>
+                  <svg class="footer-soc-icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-facebook"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="footer-soc-item">
+                <button class="footer-soc-btn">
+                  <a href="" class="footer-soc-link">Instagram</a>
+                  <svg class="footer-soc-icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-instagram"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
 
-          <ul class="footer-soc-list">
-            <li class="footer-soc-item">
-              <button class="footer-soc-btn">
-                <a href="" class="footer-soc-link">Telegram</a
-                ><svg class="footer-soc-icon" width="24" height="24">
+            <ul class="footer-soc-list-mob">
+              <li class="footer-soc-item-mobile">
+                <svg class="footer-soc-icon" width="24" height="24">
                   <use href="./img/icons.svg#icon-telegram"></use>
                 </svg>
-              </button>
-            </li>
-            <li class="footer-soc-item">
-              <button class="footer-soc-btn">
-                <a href="" class="footer-soc-link">Facebook</a>
+              </li>
+              <li class="footer-soc-item-mobile">
                 <svg class="footer-soc-icon" width="24" height="24">
                   <use href="./img/icons.svg#icon-facebook"></use>
                 </svg>
-              </button>
-            </li>
-            <li class="footer-soc-item">
-              <button class="footer-soc-btn">
-                <a href="" class="footer-soc-link">Instagram</a>
+              </li>
+              <li class="footer-soc-item-mobile">
                 <svg class="footer-soc-icon" width="24" height="24">
                   <use href="./img/icons.svg#icon-instagram"></use>
                 </svg>
-              </button>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-      </section> -->
+      </section>
     </footer>
   </body>
 </html>
